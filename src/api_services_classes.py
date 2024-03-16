@@ -30,7 +30,7 @@ class HeadHunterAPI(APIServices):
 
     def get_employer_vacancies(self, employer_name):
         params = {
-            'text': 'ООО Открытый код',
+            'text': employer_name,
             'area': 113,
             'per_page': 100,
             'only_with_vacancies': True
